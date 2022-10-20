@@ -1,15 +1,31 @@
-.grid{
-  position: absolute;
-  width: 600px;
-  height: 300px;
-  border: solid black 1px;
+body {
+  color: #ecf0f1;
+  background-color: #2c3e50;
 }
 
-.block{
-  position: absolute;
-  width: 100px;
-  height: 20px;
-  background-color: blue;
-  left: 50px;
-  bottom: 50px;
+#start, #game-over {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ecf0f1;
+  padding:20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  width:200px;
+  text-align: center;
 }
+
+#start a, #game-over a {
+  border: 1px solid #ecf0f1;
+  color: #ecf0f1;
+  text-decoration:none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+#start a:hover, #game-over a:hover { background-color:#ecf0f1; color:#2c3e50; }
